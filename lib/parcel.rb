@@ -7,10 +7,12 @@ class Parcel
   end
 
   def volume
-    @l * @w * @h
+    @vol = @l * @w * @h
   end
 
   def cost_to_ship
-
+    base = 5
+    base += @vol * 0.05
+    base += @weight * 0.05
   end
 end
