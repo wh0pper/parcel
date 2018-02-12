@@ -1,0 +1,36 @@
+
+<form action="/parcel">
+  <div class="form-group">
+    <label>Package dimensions:</label>
+    <div class="row">
+      <div class="col-md-1">
+        <label>Length:</label>
+        <input name="length" class="form-control" type=number><br>
+      </div>
+      <div class="col-md-1">
+        <label>Width:</label>
+        <input name="width" class="form-control" type=number><br>
+      </div>
+      <div class="col-md-1">
+        <label>Height:</label>
+        <input name="height" class="form-control" type=number><br>
+      </div>
+      <div class="col-md-3">
+        <label>Weight (lbs):</label>
+        <input name="weight" class="form-control" type=number>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Shipping method</label>
+    <select name="shipping" class="form-control">
+      <option value="ground">Ground
+      <option value="air">Air
+      <option value="overnight">Overnight
+    </select>  <br>
+    <input type="checkbox" name="insurance" value="yes">
+    <label>Insurance</label>
+  </div>
+  <button type="sumbit" class="btn btn-primary">Submit</button>
+</form>
